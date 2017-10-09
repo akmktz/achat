@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>A-chat</title>
+    <script defer type="text/javascript" src="websocket.js" ></script>
+    <style>
+        #main {
+            width:  50%;
+            margin: 0 auto;
+        }
+        #textChat, #textInput, #sendBtn {
+            width: 100%;
+            border: solid #9f9f9f 1px;
+            border-radius: 3px;
+            padding: 4px 6px;
+        }
+        #textChat {
+            min-height: 50px;
+            max-height: 500px;
+            margin-bottom: 10px;
+            overflow: auto;
+        }
+        #textChat p {
+            width: 60%;
+            font-family: "DejaVu Sans Condensed";
+            font-size: small;
+            border: solid #e2e2e2 1px;
+            border-radius: 3px;
+            padding: 5px 7px;
+        }
+        #textChat .info {
+            background: #ececec;
+            margin: 5px auto;
+        }
+        #textChat .error {
+            background: #ec8888;
+            margin: 5px auto;
+        }
+        #textChat .in {
+            background: #d3d1ec;
+            margin: 5px auto 5px 5px;
+        }
+        #textChat .out {
+            background: #eceabf;
+            margin: 5px 5px 5px auto;
+        }
+        #textInput {
+            width: 80%;
+        }
+        #sendBtn {
+            width: 17%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="textChat"></div>
+        <span><input type="text" id="textInput"> <button id="sendBtn">Send</button></span>
+    </div>
+</body>
+</html>
